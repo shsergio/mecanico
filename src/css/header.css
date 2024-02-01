@@ -1,90 +1,55 @@
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #007BFF; /* Color de fondo del encabezado */
-    color: #ffffff;
-    padding: 0.5em 1em; /* Ajusta el relleno según necesites */
-  }
-  
-  .header-logo {
-    height: 50px; /* Ajusta la altura de tu logo */
-  }
-  
-  .header-profile {
-    background-color: #6C757D; /* Color de fondo para el contenedor del icono de perfil */
-    padding: 0.5em;
-    border-radius: 50%; /* Hace que el contenedor del icono sea circular */
-  }
-  
-  .profile-icon {
-    height: 30px; /* Ajusta la altura de tu icono de perfil */
-  }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5C9CB0; /* Asumiendo que este es el color de fondo azul */
-    padding: 0.5em 1em; /* Ajusta el relleno según el tamaño deseado */
-  }
-  
-  .header-logo {
-    height: 50px; /* Ajusta según el tamaño de tu logo */
-    /* Asumiendo que el logo necesita un poco de margen a la derecha */
-    margin-right: 1em;
-  }
-  
-  .header-profile {
-    /* Ajusta la posición del perfil si es necesario */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Estilos para hacer que el contenedor del perfil sea un círculo */
-    width: 50px; /* Ajusta el tamaño del círculo */
-    height: 50px; /* Ajusta el tamaño del círculo */
-    border-radius: 50%; /* Esto hace que el div sea un círculo */
-    background-color: #6C757D; /* Asumiendo que este es el color de fondo del círculo */
-    padding: 0.5em; /* Ajusta el relleno si es necesario */
-  }
-  
-  .profile-icon {
-    height: 100%; /* Ajusta según el tamaño deseado */
-    /* Si el icono no es un círculo y quieres que lo sea, puedes añadir: */
-    border-radius: 50%; /* Esto hace que la imagen sea un círculo */
-  }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5C9CB0; /* Asumiendo que este es el color de fondo azul */
-    padding: 0.5em 1em; /* Ajusta el relleno según el tamaño deseado */
-  }
-  
-  .header-logo {
-    height: 50px; /* Ajusta según el tamaño de tu logo */
-  }
-  
-  .header-profile-btn {
-    /* Estilos para hacer que el botón parezca un contenedor de imagen de perfil */
-    background-color: #6C757D; /* Asumiendo que este es el color de fondo del círculo */
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 0.5em; /* Ajusta el relleno si es necesario */
-    width: 50px; /* Ajusta el tamaño del círculo */
-    height: 50px; /* Ajusta el tamaño del círculo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile-icon {
-    height: 100%; /* Ajusta según el tamaño deseado */
-    border-radius: 50%; /* Esto hace que la imagen sea un círculo */
-  }
-  
-  .header-profile-btn:hover {
-    /* Estilos para el hover del botón */
-    background-color: #5a6268; /* Un tono más oscuro para el hover */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5C9CB0; /* Color de fondo del encabezado */
+  color: #ffffff;
+  padding: 0.5em 1em; /* Ajusta el relleno según necesites */
+}
+
+.header-logo {
+  height: 50px; /* Ajusta la altura de tu logo */
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1em; /* Espacio entre los botones */
+}
+
+.header-button {
+  background-color: #5283b7; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto */
+  padding: 0.5em 1em; /* Ajusta el relleno según necesites */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.header-button:hover {
+  background-color: #004080; /* Un tono más oscuro para el hover */
+}
+
+.header-profile-btn {
+  background-color: #6C757D; /* Color de fondo para el contenedor del icono de perfil */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.5em; /* Ajusta el relleno si es necesario */
+  width: 50px; /* Ajusta el tamaño del círculo */
+  height: 50px; /* Ajusta el tamaño del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.profile-icon {
+  height: 100%; /* Ajusta según el tamaño deseado */
+  border-radius: 50%; /* Esto hace que la imagen sea un círculo */
+}
+
+.header-profile-btn:hover {
+  background-color: #5a6268; /* Un tono más oscuro para el hover */
+}

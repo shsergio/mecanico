@@ -1,0 +1,553 @@
+[33mcommit 336c033b1e77694e76d8c1cca1c03d31baa473ae[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: shsergio <sh04861@gmail.com>
+Date:   Thu Feb 1 05:24:07 2024 -0500
+
+    subo cambios
+
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex c833aab..d696efe 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -15,6 +15,7 @@[m
+         "react-dom": "^18.2.0",[m
+         "react-router-dom": "^6.21.3",[m
+         "react-scripts": "5.0.1",[m
+[32m+[m[32m        "reactstrap": "^9.2.2",[m
+         "Router": "^2.1.0",[m
+         "web-vitals": "^2.1.4"[m
+       }[m
+[36m@@ -3354,6 +3355,15 @@[m
+         }[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/@popperjs/core": {[m
+[32m+[m[32m      "version": "2.11.8",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz",[m
+[32m+[m[32m      "integrity": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==",[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "opencollective",[m
+[32m+[m[32m        "url": "https://opencollective.com/popperjs"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/@remix-run/router": {[m
+       "version": "1.14.2",[m
+       "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.14.2.tgz",[m
+[36m@@ -6091,6 +6101,11 @@[m
+       "resolved": "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.3.tgz",[m
+       "integrity": "sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ=="[m
+     },[m
+[32m+[m[32m    "node_modules/classnames": {[m
+[32m+[m[32m      "version": "2.5.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow=="[m
+[32m+[m[32m    },[m
+     "node_modules/clean-css": {[m
+       "version": "5.3.3",[m
+       "resolved": "https://registry.npmjs.org/clean-css/-/clean-css-5.3.3.tgz",[m
+[36m@@ -7051,6 +7066,15 @@[m
+         "utila": "~0.4"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/dom-helpers": {[m
+[32m+[m[32m      "version": "5.2.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@babel/runtime": "^7.8.7",[m
+[32m+[m[32m        "csstype": "^3.0.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/dom-serializer": {[m
+       "version": "1.4.1",[m
+       "resolved": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-1.4.1.tgz",[m
+[36m@@ -14905,11 +14929,30 @@[m
+       "resolved": "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz",[m
+       "integrity": "sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg=="[m
+     },[m
+[32m+[m[32m    "node_modules/react-fast-compare": {[m
+[32m+[m[32m      "version": "3.2.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ=="[m
+[32m+[m[32m    },[m
+     "node_modules/react-is": {[m
+       "version": "17.0.2",[m
+       "resolved": "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz",[m
+       "integrity": "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="[m
+     },[m
+[32m+[m[32m    "node_modules/react-popper": {[m
+[32m+[m[32m      "version": "2.3.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-popper/-/react-popper-2.3.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-e1hj8lL3uM+sgSR4Lxzn5h1GxBlpa4CQz0XLF8kx4MDrDRWY0Ena4c97PUeSX9i5W3UAfDP0z0FXCTQkoXUl3Q==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "react-fast-compare": "^3.0.1",[m
+[32m+[m[32m        "warning": "^4.0.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "@popperjs/core": "^2.0.0",[m
+[32m+[m[32m        "react": "^16.8.0 || ^17 || ^18",[m
+[32m+[m[32m        "react-dom": "^16.8.0 || ^17 || ^18"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/react-refresh": {[m
+       "version": "0.11.0",[m
+       "resolved": "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz",[m
+[36m@@ -15020,6 +15063,38 @@[m
+         }[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/react-transition-group": {[m
+[32m+[m[32m      "version": "4.4.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@babel/runtime": "^7.5.5",[m
+[32m+[m[32m        "dom-helpers": "^5.0.1",[m
+[32m+[m[32m        "loose-envify": "^1.4.0",[m
+[32m+[m[32m        "prop-types": "^15.6.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": ">=16.6.0",[m
+[32m+[m[32m        "react-dom": ">=16.6.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/reactstrap": {[m
+[32m+[m[32m      "version": "9.2.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/reactstrap/-/reactstrap-9.2.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-4KroiGOdqZLAnMGzHjpErW3G7bLB+QbKzzMLIDXydPIV0y74lpdL7WtXHkLWAGInd97WCPNx4+R0NQDPyzIfhw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@babel/runtime": "^7.12.5",[m
+[32m+[m[32m        "@popperjs/core": "^2.6.0",[m
+[32m+[m[32m        "classnames": "^2.2.3",[m
+[32m+[m[32m        "prop-types": "^15.5.8",[m
+[32m+[m[32m        "react-popper": "^2.2.4",[m
+[32m+[m[32m        "react-transition-group": "^4.4.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": ">=16.8.0",[m
+[32m+[m[32m        "react-dom": ">=16.8.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/read-cache": {[m
+       "version": "1.0.0",[m
+       "resolved": "https://registry.npmjs.org/read-cache/-/read-cache-1.0.0.tgz",[m
+[36m@@ -17252,6 +17327,14 @@[m
+         "makeerror": "1.0.12"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/warning": {[m
+[32m+[m[32m      "version": "4.0.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/warning/-/warning-4.0.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "loose-envify": "^1.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/watchpack": {[m
+       "version": "2.4.0",[m
+       "resolved": "https://registry.npmjs.org/watchpack/-/watchpack-2.4.0.tgz",[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 79f0892..f8b0797 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -10,6 +10,7 @@[m
+     "react-dom": "^18.2.0",[m
+     "react-router-dom": "^6.21.3",[m
+     "react-scripts": "5.0.1",[m
+[32m+[m[32m    "reactstrap": "^9.2.2",[m
+     "Router": "^2.1.0",[m
+     "web-vitals": "^2.1.4"[m
+   },[m
+[1mdiff --git a/src/App.js b/src/App.js[m
+[1mindex daf7402..178ecfa 100644[m
+[1m--- a/src/App.js[m
+[1m+++ b/src/App.js[m
+[36m@@ -1,9 +1,13 @@[m
+ import React from 'react';[m
+ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';[m
+[31m-import Login from './page/Login';[m
+[32m+[m[32mimport Login from './page/login';[m
+ import Register from './page/Register';[m
+ import Home from './page/Home';[m
+[31m-import JobForm from './page/JobForm'; // Importa el componente JobForm[m
+[32m+[m[32mimport JobForm from './page/JobForm';[m
+[32m+[m[32mimport ConsultarTrabajos from './page/ConsultarTrabajos';[m
+[32m+[m[32mimport Detalles from './page/Detalles';[m
+[32m+[m[32mimport Seguimiento from './page/Seguimiento';[m
+[32m+[m[32mimport Trabajos from './page/Trabajos';[m
+ [m
+ const App = () => {[m
+   const handleLogin = (userData) => {[m
+[36m@@ -21,11 +25,15 @@[m [mconst App = () => {[m
+           <Route exact path="/" element={<Login onLogin={handleLogin} />} />[m
+           <Route path="/home" element={<Home />} />[m
+           <Route path="/register" element={<Register onRegister={handleRegister} />} />[m
+[31m-          <Route path="/job-form" element={<JobForm />} /> {/* Ruta para el componente JobForm */}[m
+[32m+[m[32m          <Route path="/job-form" element={<JobForm />} />[m
+[32m+[m[32m          <Route path="/consultartrabajos" element={<ConsultarTrabajos />} />[m
+[32m+[m[32m          <Route path="/detalles/:id" element={<Detalles />} />[m
+[32m+[m[32m          <Route path="/seguimiento" element={<Seguimiento />} />[m
+[32m+[m[32m          <Route path="/trabajos" element={<Trabajos />} />[m
+         </Routes>[m
+       </div>[m
+     </Router>[m
+   );[m
+ };[m
+ [m
+[31m-export default App;[m
+[32m+[m[32mexport default App;[m
+\ No newline at end of file[m
+[1mdiff --git a/src/components/Header.js b/src/components/Header.js[m
+[1mindex ba8e67f..7177ecc 100644[m
+[1m--- a/src/components/Header.js[m
+[1m+++ b/src/components/Header.js[m
+[36m@@ -1,19 +1,26 @@[m
+ import React from 'react';[m
+[31m-import '../css/header.css'; // Asegúrate de que el archivo CSS está correctamente vinculado[m
+[32m+[m[32mimport { Link } from 'react-router-dom';[m
+[32m+[m[32mimport '../css/header.css';[m
+ [m
+ const Header = () => {[m
+[31m-  const logoUrl = "https://files.oaiusercontent.com/file-P6NgoliPziVP6mBZqzxU6q2a?se=2024-01-31T16%3A23%3A32Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D5f2bc96a-5043-462e-a0be-13dbd733236c.webp&sig=6RG4arQMTr/fpNBz83Wa14jcIVURQ1Hx/YKWOzvSBZo%3D"; // Reemplaza con la URL de tu logo[m
+[31m-  const userProfileIcon = "https://cdn.icon-icons.com/icons2/877/PNG/512/male-profile-picture_icon-icons.com_68388.png"; // Reemplaza con la URL de tu icono de perfil[m
+[32m+[m[32m  const logoUrl = "https://files.oaiusercontent.com/file-P6NgoliPziVP6mBZqzxU6q2a?se=2024-01-31T16%3A23%3A32Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D5f2bc96a-5043-462e-a0be-13dbd733236c.webp&sig=6RG4arQMTr/fpNBz83Wa14jcIVURQ1Hx/YKWOzvSBZo%3D";[m
+[32m+[m[32m  const userProfileIcon = "https://cdn.icon-icons.com/icons2/877/PNG/512/male-profile-picture_icon-icons.com_68388.png";[m
+ [m
+[31m-  // Añadir manejo de evento para el botón de perfil si es necesario[m
+   const handleProfileClick = () => {[m
+[31m-    // Manejo del clic en el perfil[m
+     console.log("Perfil clickeado");[m
+   };[m
+ [m
+   return ([m
+     <div className="header-container">[m
+[31m-      <img src={logoUrl} alt="Mechaniix Pro" className="header-logo" />[m
+[32m+[m[32m      <Link to="/">[m
+[32m+[m[32m        <img src={logoUrl} alt="Mechaniix Pro" className="header-logo" />[m
+[32m+[m[32m      </Link>[m
+[32m+[m[32m      <div className="header-buttons">[m
+[32m+[m[32m        <Link to="/ConsultarTrabajos" className="header-button">Consultar trabajo</Link>[m
+[32m+[m[32m        <Link to="/Home" className="header-button">Home</Link>[m
+[32m+[m[32m        <Link to="/Seguimiento" className="header-button">Seguimiento</Link>[m
+[32m+[m[32m        <Link to="/Trabajos" className="header-button">Trabajos</Link>[m
+[32m+[m[32m      </div>[m
+       <button onClick={handleProfileClick} className="header-profile-btn">[m
+         <img src={userProfileIcon} alt="Perfil" className="profile-icon" />[m
+       </button>[m
+[1mdiff --git a/src/css/consultartrabajos.css b/src/css/consultartrabajos.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ee610d3[m
+[1m--- /dev/null[m
+[1m+++ b/src/css/consultartrabajos.css[m
+[36m@@ -0,0 +1,40 @@[m
+[32m+[m[32m  h1,[m
+[32m+[m[32m  h2 {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  table {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    border-collapse: collapse;[m
+[32m+[m[32m    margin-top: 20px;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  th,[m
+[32m+[m[32m  td {[m
+[32m+[m[32m    border: 1px solid #ccc;[m
+[32m+[m[32m    padding: 10px;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  th {[m
+[32m+[m[32m    background-color: #f2f2f2;[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  button {[m
+[32m+[m[32m    background-color: #3d3dd6;[m
+[32m+[m[32m    border: none;[m
+[32m+[m[32m    color: white;[m
+[32m+[m[32m    padding: 5px 10px;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m    margin: 4px 2px;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    width: 159px;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  button:hover {[m
+[32m+[m[32m    background-color: #a612e5;[m
+[32m+[m[32m  }[m
+\ No newline at end of file[m
+[1mdiff --git a/src/css/header.css b/src/css/header.css[m
+[1mindex 34634ed..901d21f 100644[m
+[1m--- a/src/css/header.css[m
+[1m+++ b/src/css/header.css[m
+[36m@@ -1,90 +1,55 @@[m
+ .header-container {[m
+[31m-    display: flex;[m
+[31m-    justify-content: space-between;[m
+[31m-    align-items: center;[m
+[31m-    background-color: #007BFF; /* Color de fondo del encabezado */[m
+[31m-    color: #ffffff;[m
+[31m-    padding: 0.5em 1em; /* Ajusta el relleno según necesites */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-logo {[m
+[31m-    height: 50px; /* Ajusta la altura de tu logo */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-profile {[m
+[31m-    background-color: #6C757D; /* Color de fondo para el contenedor del icono de perfil */[m
+[31m-    padding: 0.5em;[m
+[31m-    border-radius: 50%; /* Hace que el contenedor del icono sea circular */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .profile-icon {[m
+[31m-    height: 30px; /* Ajusta la altura de tu icono de perfil */[m
+[31m-  }[m
+[31m-  .header-container {[m
+[31m-    display: flex;[m
+[31m-    justify-content: space-between;[m
+[31m-    align-items: center;[m
+[31m-    background-color: #5C9CB0; /* Asumiendo que este es el color de fondo azul */[m
+[31m-    padding: 0.5em 1em; /* Ajusta el relleno según el tamaño deseado */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-logo {[m
+[31m-    height: 50px; /* Ajusta según el tamaño de tu logo */[m
+[31m-    /* Asumiendo que el logo necesita un poco de margen a la derecha */[m
+[31m-    margin-right: 1em;[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-profile {[m
+[31m-    /* Ajusta la posición del perfil si es necesario */[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    justify-content: center;[m
+[31m-    /* Estilos para hacer que el contenedor del perfil sea un círculo */[m
+[31m-    width: 50px; /* Ajusta el tamaño del círculo */[m
+[31m-    height: 50px; /* Ajusta el tamaño del círculo */[m
+[31m-    border-radius: 50%; /* Esto hace que el div sea un círculo */[m
+[31m-    background-color: #6C757D; /* Asumiendo que este es el color de fondo del círculo */[m
+[31m-    padding: 0.5em; /* Ajusta el relleno si es necesario */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .profile-icon {[m
+[31m-    height: 100%; /* Ajusta según el tamaño deseado */[m
+[31m-    /* Si el icono no es un círculo y quieres que lo sea, puedes añadir: */[m
+[31m-    border-radius: 50%; /* Esto hace que la imagen sea un círculo */[m
+[31m-  }[m
+[31m-  .header-container {[m
+[31m-    display: flex;[m
+[31m-    justify-content: space-between;[m
+[31m-    align-items: center;[m
+[31m-    background-color: #5C9CB0; /* Asumiendo que este es el color de fondo azul */[m
+[31m-    padding: 0.5em 1em; /* Ajusta el relleno según el tamaño deseado */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-logo {[m
+[31m-    height: 50px; /* Ajusta según el tamaño de tu logo */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-profile-btn {[m
+[31m-    /* Estilos para hacer que el botón parezca un contenedor de imagen de perfil */[m
+[31m-    background-color: #6C757D; /* Asumiendo que este es el color de fondo del círculo */[m
+[31m-    border: none;[m
+[31m-    border-radius: 50%;[m
+[31m-    cursor: pointer;[m
+[31m-    padding: 0.5em; /* Ajusta el relleno si es necesario */[m
+[31m-    width: 50px; /* Ajusta el tamaño del círculo */[m
+[31m-    height: 50px; /* Ajusta el tamaño del círculo */[m
+[31m-    display: flex;[m
+[31m-    justify-content: center;[m
+[31m-    align-items: center;[m
+[31m-  }[m
+[31m-  [m
+[31m-  .profile-icon {[m
+[31m-    height: 100%; /* Ajusta según el tamaño deseado */[m
+[31m-    border-radius: 50%; /* Esto hace que la imagen sea un círculo */[m
+[31m-  }[m
+[31m-  [m
+[31m-  .header-profile-btn:hover {[m
+[31m-    /* Estilos para el hover del botón */[m
+[31m-    background-color: #5a6268; /* Un tono más oscuro para el hover */[m
+[31m-  }[m
+[31m-  [m
+\ No newline at end of file[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: space-between;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  background-color: #5C9CB0; /* Color de fondo del encabezado */[m
+[32m+[m[32m  color: #ffffff;[m
+[32m+[m[32m  padding: 0.5em 1em; /* Ajusta el relleno según necesites */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-logo {[m
+[32m+[m[32m  height: 50px; /* Ajusta la altura de tu logo */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-buttons {[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  gap: 1em; /* Espacio entre los botones */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-button {[m
+[32m+[m[32m  background-color: #5283b7; /* Color de fondo del botón */[m
+[32m+[m[32m  color: #ffffff; /* Color del texto */[m
+[32m+[m[32m  padding: 0.5em 1em; /* Ajusta el relleno según necesites */[m
+[32m+[m[32m  border: none;[m
+[32m+[m[32m  border-radius: 4px;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m  transition: background-color 0.3s ease;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-button:hover {[m
+[32m+[m[32m  background-color: #004080; /* Un tono más oscuro para el hover */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-profile-btn {[m
+[32m+[m[32m  background-color: #6C757D; /* Color de fondo para el contenedor del icono de perfil */[m
+[32m+[m[32m  border: none;[m
+[32m+[m[32m  border-radius: 50%;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m  padding: 0.5em; /* Ajusta el relleno si es necesario */[m
+[32m+[m[32m  width: 50px; /* Ajusta el tamaño del círculo */[m
+[32m+[m[32m  height: 50px; /* Ajusta el tamaño del círculo */[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  transition: background-color 0.3s ease;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.profile-icon {[m
+[32m+[m[32m  height: 100%; /* Ajusta según el tamaño deseado */[m
+[32m+[m[32m  border-radius: 50%; /* Esto hace que la imagen sea un círculo */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-profile-btn:hover {[m
+[32m+[m[32m  background-color: #5a6268; /* Un tono más oscuro para el hover */[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/css/seguimiento.css b/src/css/seguimiento.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c268b1f[m
+[1m--- /dev/null[m
+[1m+++ b/src/css/seguimiento.css[m
+[36m@@ -0,0 +1,65 @@[m
+[32m+[m[32mbody {[m
+[32m+[m[32m  font-family: Arial, sans-serif;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.seguimiento-title {[m
+[32m+[m[32m  color: black;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  margin-bottom: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.gracias-enmarcado {[m
+[32m+[m[32m  border: 1px solid #ff0000;[m
+[32m+[m[32m  border-radius: 5px;[m
+[32m+[m[32m  padding: 10px;[m
+[32m+[m[32m  margin-bottom: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.gracias-text {[m
+[32m+[m[32m  font-size: 1.2rem;[m
+[32m+[m[32m  color: red;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.seguimiento-container {[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: space-around;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  flex-wrap: wrap;[m
+[32m+[m[32m  margin: 0 auto;[m
+[32m+[m[32m  max-width: 800px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.job-state,[m
+[32m+[m[32m.job-progress {[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  max-width: 300px;[m
+[32m+[m[32m  margin-bottom: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.job-state h3,[m
+[32m+[m[32m.job-progress h3 {[m
+[32m+[m[32m  margin-bottom: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.job-buttons {[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: space-around;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  max-width: 300px;[m
+[32m+[m[32m  margin-bottom: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.job-buttons button {[m
+[32m+[m[32m  margin-right: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.job-buttons button:nth-child(4) {[m
+[32m+[m[32m  margin-right: 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.job-buttons button:disabled {[m
+[32m+[m[32m  cursor: not-allowed;[m
+[32m+[m[32m  background-color: #cccccc;[m
+[32m+[m[32m  border-color: #cccccc;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/css/trabajos.css b/src/css/trabajos.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1380047[m
+[1m--- /dev/null[m
+[1m+++ b/src/css/trabajos.css[m
+[36m@@ -0,0 +1,30 @@[m
+[32m+[m[32m/* trabajos.css */[m
+[32m+[m
+[32m+[m[32m.button-container {[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-direction: column;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    text-align: center; /* Alineación del texto en el centro */[m
+[32m+[m[32m    margin-top: 8%; /* Ajusta el margen superior según sea necesario */[m
+[32m+[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  .button-link {[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    margin: 10px;[m
+[32m+[m[32m    padding: 15px 30px; /* Ajusta el padding para hacer los botones más grandes */[m
+[32m+[m[32m    font-size: 20px; /* Ajusta el tamaño de fuente para hacerlos más grandes */[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m    background-color: #007bff;[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m    border: 2px solid #007bff; /* Aumenta el grosor del borde si es necesario */[m
+[32m+[m[32m    border-radius: 8px; /* Ajusta el radio del borde para hacerlo más redondeado */[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    transition: background-color 0.3s ease;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[32m  .button-link:hover {[m
+[32m+[m[32m    background-color: #0056b3;[m
+[32m+[m[32m    border-color: #0056b3;[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+\ No newline at end of file[m
+[1mdiff --git a/src/page/ConsultarTrabajos.js b/src/page/ConsultarTrabajos.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c8aa8b1[m
+[1m--- /dev/null[m
+[1m+++ b/src/page/ConsultarTrabajos.js[m
+[36m@@ -0,0 +1,59 @@[m
+[32m+[m[32mimport React, { useState } from 'react';[m
+[32m+[m[32mimport { useNavigate } from 'react-router-dom';[m
+[32m+[m[32mimport Header from '../components/Header';[m
+[32m+[m[32mimport '../css/consultartrabajos.css'[m
+[32m+[m
+[32m+[m[32mconst ConsultarTrabaj

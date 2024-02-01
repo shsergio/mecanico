@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.seguimiento-title {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gracias-enmarcado {
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.gracias-text {
+  font-size: 1.2rem;
+  color: red;
+  text-align: center;
+}
+
+.seguimiento-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.job-state,
+.job-progress {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.job-state h3,
+.job-progress h3 {
+  margin-bottom: 10px;
+}
+
+.job-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.job-buttons button {
+  margin-right: 10px;
+}
+
+.job-buttons button:nth-child(4) {
+  margin-right: 0;
+}
+
+.job-buttons button:disabled {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
