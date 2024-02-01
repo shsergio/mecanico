@@ -20,6 +20,12 @@ const Header = () => {
         <Link to="/Home" className="header-button">Home</Link>
         <Link to="/Seguimiento" className="header-button">Seguimiento</Link>
         <Link to="/Trabajos" className="header-button">Trabajos</Link>
+        <Link to="/job-form" className="header-button">registrar trabajo</Link>
+        <Link to="/ActualizarTrabajo" className="header-button">Actualizar</Link>
+        <Link to="/ACTrabajos" className="header-button">ACTrabajos</Link>
+
+
+
       </div>
       <button onClick={handleProfileClick} className="header-profile-btn">
         <img src={userProfileIcon} alt="Perfil" className="profile-icon" />

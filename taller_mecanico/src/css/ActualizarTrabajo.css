@@ -1,0 +1,46 @@
+.actualizar-trabajo {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .actualizar-trabajo h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button.cancelar {
+    background-color: #d9534f; /* Rojo */
+  }
+  
+  /* Puedes añadir colores distintos a los otros botones aquí */
+  

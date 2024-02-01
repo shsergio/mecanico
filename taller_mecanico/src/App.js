@@ -8,6 +8,8 @@ import ConsultarTrabajos from './page/ConsultarTrabajos';
 import Detalles from './page/Detalles';
 import Seguimiento from './page/Seguimiento';
 import Trabajos from './page/Trabajos';
+import ActualizarTrabajo from './page/ActualizarTrabajo';
+import ACTrabajos from './page/ACTrabajos';
 
 const App = () => {
   const handleLogin = (userData) => {
@@ -30,6 +32,10 @@ const App = () => {
           <Route path="/detalles/:id" element={<Detalles />} />
           <Route path="/seguimiento" element={<Seguimiento />} />
           <Route path="/trabajos" element={<Trabajos />} />
+          <Route path="/ActualizarTrabajo" element={<ActualizarTrabajo />} />
+          <Route path="/ACTrabajos" element={<ACTrabajos />} />
+
+
         </Routes>
       </div>
     </Router>
