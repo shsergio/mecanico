@@ -1,0 +1,73 @@
+.job-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido arriba */
+    height: 100vh; /* O ajusta según necesites */
+    background: #f0f0f0; /* Color de fondo del contenedor del formulario */
+  }
+  
+  .job-form {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajusta el ancho según necesites */
+    margin-top: 2rem; /* Espacio arriba del formulario */
+  }
+  
+  .job-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .job-form label {
+    display: block;
+    margin-top: 1em;
+  }
+  
+  .job-form textarea,
+  .job-form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1em;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover,
+  .cancel-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #333; /* O el color que prefieras para el título */
+    margin-bottom: 1rem; /* Añade espacio debajo del título */
+    font-size: 24px; /* Ajusta el tamaño del texto según tus preferencias */
+    font-weight: bold; /* Opcional: si quieres hacer que el título sea más audaz */
+  }
+  

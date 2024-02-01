@@ -1,0 +1,66 @@
+.home-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px; /* Limita el ancho máximo y centra el contenido */
+    margin: auto;
+    color: #333; /* Color del texto */
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: #ffffff; /* Fondo blanco para el encabezado */
+  }
+  
+  .logo {
+    height: 50px; /* Altura del logo */
+  }
+  
+  .navigation {
+    /* Estilos para la navegación aquí */
+  }
+  
+  .main-banner {
+    background-image: url('https://norisk.mx/wp-content/uploads/2020/06/mec%C3%A1nicos-de-autom%C3%B3viles-usan-la-tecnolog%C3%ADa.jpg'); /* URL directa a la imagen */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0; /* Ajusta según tu diseño */
+  }
+  
+  
+  .main-banner h1 {
+    color: #ffffff; /* Color del texto del título */
+    font-size: 4em; /* Tamaño del texto del título */
+    margin: 0; /* Remueve márgenes por defecto */
+  }
+  
+  .content-section {
+    padding: 2em;
+    background: #f0f0f0; /* Color de fondo de la sección de contenido */
+  }
+  
+  .content-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333; /* Color del texto de los títulos de sección */
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 1em; /* Espacio entre bloques de contenido */
+  }
+  
+  .content-block {
+    background: #ffffff; /* Fondo blanco para los bloques de contenido */
+    padding: 1em;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /* Estilos para el texto y títulos dentro de los bloques de contenido */
+  }
+  
+  /* Asegúrate de que estos estilos no estén siendo sobrescritos por otros estilos */
+  /* Añade media queries para hacer la página responsiva si es necesario */
+  
