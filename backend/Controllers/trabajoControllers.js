@@ -47,18 +47,19 @@ const obtenerTrabajoPorId = (req, res) => {
 
 // Crear un nuevo trabajo
 const crearTrabajo = (req, res) => {
-  const { id_mecanico, id_cliente, fecha, descripcion } = req.body;
+  const { nombre, tipo_de_trabajo, horas, costo, estado, descripcion, id_mecanico, id_cliente, id_pieza } = req.body;
 
-  const sql = "INSERT INTO trabajo (id_mecanico, id_cliente, fecha, descripcion) VALUES (?, ?, ?, ?)";
+  const sql = "INSERT INTO trabajo (nombre, tipo_de_trabajo, horas, costo, estado, descripcion, id_mecanico, id_cliente, id_pieza) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-  connection.query(sql, [id_mecanico, id_cliente, fecha, descripcion], (error, results) => {
+  connection.query(sql, [nombre, tipo_de_trabajo, horas, costo, estado, descripcion, id_mecanico, id_cliente, id_pieza], (error, results) => {
     if (error) {
-      res.status(500).json({ error: "Error al agregar nuevo trabajo" });
+      res.status(500).json({ error: `Error al agregar nuevo trabajo: ${error.message}` });
     } else {
       res.json({ message: "Trabajo agregado correctamente" });
     }
   });
 };
+
 
 // Actualizar información de un trabajo por ID
 const actualizarTrabajoPorId = (req, res) => {

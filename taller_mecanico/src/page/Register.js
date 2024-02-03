@@ -1,49 +1,90 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import axios from 'axios';
 import '../css/login.css';
 
 const Register = ({ onRegister }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [descripcion, setDescripcion] = useState('');
+  const [horas, setHoras] = useState(0);
+  const [estado, setEstado] = useState('');
+  const [tipoDeTrabajo, setTipoDeTrabajo] = useState('');
+  const [costo, setCosto] = useState(0);
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-    console.log(`Usuario: ${username}, Contraseña: ${password}`);
-   
-    onRegister({ username, password });
-  };
 
-  const logoUrl = 'https://files.oaiusercontent.com/file-P6NgoliPziVP6mBZqzxU6q2a?se=2024-01-31T16%3A23%3A32Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D5f2bc96a-5043-462e-a0be-13dbd733236c.webp&sig=6RG4arQMTr/fpNBz83Wa14jcIVURQ1Hx/YKWOzvSBZo%3D'; 
+    try {
+      // Hacer una solicitud al backend para registrar un nuevo trabajo
+      const response = await axios.post('http://localhost:4001/api/trabajos', {
+        descripcion,
+        horas,
+        estado,
+        tipo_de_trabajo: tipoDeTrabajo,
+        costo,
+      });
+
+      // El backend debería devolver algún indicador de éxito
+      if (response.data.message) {
+        // Manejar el éxito (puedes redirigir al usuario, mostrar un mensaje, etc.)
+        console.log('Registro de trabajo exitoso!');
+        onRegister(); // ¿Necesitas manejar algo en el frontend?
+      } else {
+        // Manejar el caso en que el backend indica un fallo
+        console.error('Error en el registro de trabajo:', response.data.error);
+      }
+    } catch (error) {
+      console.error('Error en la solicitud de registro de trabajo:', error.message);
+    }
+  };
 
   return (
     <div className="register-wrapper">
       <div className="register-container">
-        <div className="logo-container">
-          <img src={logoUrl} alt="Mechaniix Pro" />
-        </div>
-        <h2>Registro de Usuario</h2>
+        {/* Resto del código para la interfaz de usuario... */}
+        <h2>Registro de Trabajo</h2>
         <form className="register-form" onSubmit={handleRegister}>
           <div className="input-container">
             <input
               type="text"
-              placeholder="Usuario"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Descripción"
+              value={descripcion}
+              onChange={(e) => setDescripcion(e.target.value)}
             />
           </div>
           <div className="input-container">
             <input
-              type="password"
-              placeholder="Contraseña"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              type="number"
+              placeholder="Horas"
+              value={horas}
+              onChange={(e) => setHoras(e.target.value)}
+            />
+          </div>
+          <div className="input-container">
+            <input
+              type="text"
+              placeholder="Estado"
+              value={estado}
+              onChange={(e) => setEstado(e.target.value)}
+            />
+          </div>
+          <div className="input-container">
+            <input
+              type="text"
+              placeholder="Tipo de Trabajo"
+              value={tipoDeTrabajo}
+              onChange={(e) => setTipoDeTrabajo(e.target.value)}
+            />
+          </div>
+          <div className="input-container">
+            <input
+              type="number"
+              placeholder="Costo"
+              value={costo}
+              onChange={(e) => setCosto(e.target.value)}
             />
           </div>
           <button type="submit" className="primary-btn">
-            Registrarse
+            Registrar Trabajo
           </button>
-          {/* Link para navegar a la vista de inicio de sesión */}
-          <Link to="/" className="secondary-btn">Iniciar Sesión</Link>
         </form>
       </div>
     </div>
