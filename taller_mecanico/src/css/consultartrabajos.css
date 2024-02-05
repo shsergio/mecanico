@@ -38,3 +38,20 @@
   button:hover {
     background-color: #a612e5;
   }
+
+  /* Centrar el modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Estilo del fondo del modal */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}

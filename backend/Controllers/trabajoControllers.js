@@ -64,18 +64,19 @@ const crearTrabajo = (req, res) => {
 // Actualizar información de un trabajo por ID
 const actualizarTrabajoPorId = (req, res) => {
   const id = req.params.id_trabajo;
-  const { id_mecanico, id_cliente, fecha, descripcion } = req.body;
+  const { nombre, tipo_de_trabajo, horas, costo, estado, descripcion, id_mecanico, id_cliente, id_pieza } = req.body;
 
-  const sql = "UPDATE trabajo SET id_mecanico = ?, id_cliente = ?, fecha = ?, descripcion = ? WHERE id_trabajo = ?";
+  const sql = "UPDATE trabajo SET nombre = ?, tipo_de_trabajo = ?, horas = ?, costo = ?, estado = ?, descripcion = ?, id_mecanico = ?, id_cliente = ?, id_pieza = ? WHERE id_trabajo = ?";
 
-  connection.query(sql, [id_mecanico, id_cliente, fecha, descripcion, id], (error, results) => {
+  connection.query(sql, [nombre, tipo_de_trabajo, horas, costo, estado, descripcion, id_mecanico, id_cliente, id_pieza, id], (error, results) => {
     if (error) {
-      res.status(500).json({ error: "Error al actualizar trabajo por ID" });
+      res.status(500).json({ error: `Error al actualizar trabajo por ID: ${error.message}` });
     } else {
       res.json({ message: "Trabajo actualizado correctamente" });
     }
   });
 };
+
 
 // Eliminar un trabajo por ID
 const eliminarTrabajoPorId = (req, res) => {
@@ -85,12 +86,15 @@ const eliminarTrabajoPorId = (req, res) => {
 
   connection.query(sql, [id], (error, results) => {
     if (error) {
-      res.status(500).json({ error: "Error al eliminar trabajo por ID" });
+      res.status(500).json({ error: `Error al eliminar trabajo por ID: ${error.message}` });
+    } else if (results.affectedRows === 0) {
+      res.status(404).json({ error: "El trabajo no fue encontrado por ID" });
     } else {
       res.json({ message: "Trabajo eliminado correctamente" });
     }
   });
 };
+
 
 module.exports = {
   obtenerTrabajos,
