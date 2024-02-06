@@ -17,7 +17,6 @@ const ConsultarTrabajos = () => {
     nombre: '',
     descripcion: '',
     tipo_de_trabajo: '',
-    costo: 0,
     estado: 'Inactivo',
     horas: 0,
     // Otros campos según tu modelo de datos
@@ -40,7 +39,7 @@ const ConsultarTrabajos = () => {
         <td>{job.horas}</td>
         <td>{job.estado}</td>
         <td>{job.tipo_de_trabajo}</td>
-        <td>{job.costo}</td>
+        <td>{job.horas * 350}</td> {/* Calcular el precio basado en las horas */}
         <td>
           <button onClick={() => navigate(`/detalles/${job.id_trabajo}`)}>Ver detalles</button>
         </td>
@@ -63,7 +62,10 @@ const ConsultarTrabajos = () => {
 
   const agregarTrabajo = async () => {
     try {
-      const response = await axios.post('http://localhost:4001/api/trabajos', newJob);
+      // Calcular el precio automáticamente multiplicando el número de horas por $350
+      const costo = newJob.horas * 350;
+
+      const response = await axios.post('http://localhost:4001/api/trabajos', { ...newJob, costo });
       setJobs([...jobs, response.data]);
       setModalIsOpen(false);
 
@@ -74,7 +76,6 @@ const ConsultarTrabajos = () => {
         nombre: '',
         descripcion: '',
         tipo_de_trabajo: '',
-        costo: 0,
         estado: 'Inactivo',
         horas: 0,
         // Otros campos según tu modelo de datos
@@ -91,57 +92,57 @@ const ConsultarTrabajos = () => {
       <h2>Consultar y actualizar trabajos</h2>
       <button onClick={openModal}>Agregar Trabajo</button>
 
-
       <Modal
-  isOpen={modalIsOpen}
-  onRequestClose={closeModal}
-  contentLabel="Agregar Trabajo"
-  className="modal"
-  overlayClassName="overlay"
->
-  <h2>Agregar Trabajo</h2>
-  <form>
-    <div className="input-group">
-      <label htmlFor="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" onChange={handleInputChange} value={newJob.nombre} />
-    </div>
-    <div className="input-group">
-      <label htmlFor="descripcion">Descripción:</label>
-      <input type="text" id="descripcion" name="descripcion" onChange={handleInputChange} value={newJob.descripcion} />
-    </div>
-    <div className="input-group">
-      <label htmlFor="tipo_de_trabajo">Tipo de Trabajo:</label>
-      <select
-        id="tipo_de_trabajo"
-        name="tipo_de_trabajo"
-        onChange={handleInputChange}
-        value={newJob.tipo_de_trabajo || ''}
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Agregar Trabajo"
+        className="modal"
+        overlayClassName="overlay"
       >
-        <option value="">Seleccionar Tipo</option>
-        <option value="Reparación">Reparación</option>
-        <option value="Revisión">Revisión</option>
-      </select>
-    </div>
-    <div className="input-group">
-      <label htmlFor="costo">Costo:</label>
-      <input type="text" id="costo" name="costo" onChange={handleInputChange} value={newJob.costo} />
-    </div>
-    <div className="input-group">
-      <label htmlFor="estado">Estado:</label>
-      <input type="text" id="estado" name="estado" onChange={handleInputChange} value={newJob.estado} />
-    </div>
-    <div className="button-group">
-      <button type="button" onClick={agregarTrabajo}>Aplicar</button>
-      <button type="button" onClick={closeModal}>Cancelar</button>
-    </div>
-  </form>
-</Modal>
+        <h2>Agregar Trabajo</h2>
+        <form>
+          <div className="input-group">
+            <label htmlFor="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" onChange={handleInputChange} value={newJob.nombre} />
+          </div>
+          <div className="input-group">
+            <label htmlFor="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" onChange={handleInputChange} value={newJob.descripcion} />
+          </div>
+          <div className="input-group">
+            <label htmlFor="tipo_de_trabajo">Tipo de Trabajo:</label>
+            <select
+              id="tipo_de_trabajo"
+              name="tipo_de_trabajo"
+              onChange={handleInputChange}
+              value={newJob.tipo_de_trabajo || ''}
+            >
+              <option value="">Seleccionar Tipo</option>
+              <option value="Reparación">Reparación</option>
+              <option value="Revisión">Revisión</option>
+            </select>
+          </div>
+          <div className="input-group">
+            <label htmlFor="horas">Horas:</label>
+            <input type="number" id="horas" name="horas" onChange={handleInputChange} value={newJob.horas} />
+          </div>
+          <div className="input-group">
+            <label htmlFor="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" onChange={handleInputChange} value={newJob.estado} />
+          </div>
+          {/* No se incluye campo para el precio */}
+          <div className="button-group">
+            <button type="button" onClick={agregarTrabajo}>Aplicar</button>
+            <button type="button" onClick={closeModal}>Cancelar</button>
+          </div>
+        </form>
+      </Modal>
 
       <table>
         <thead>
           <tr>
-          <th>ID</th>
-          <th>Nombre</th>
+            <th>ID</th>
+            <th>Nombre</th>
             <th>Descripción</th>
             <th>Horas</th>
             <th>Estado</th>
